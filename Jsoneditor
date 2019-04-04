@@ -1,0 +1,253 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "ceu mundo",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "Hasta la próxima",
+                        "Chau",
+                        "Adiós",
+                        "Cierra la skill",
+                        "Hasta luego"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Definicion",
+                    "slots": [
+                        {
+                            "name": "cargo",
+                            "type": "cargo"
+                        },
+                        {
+                            "name": "Servicio",
+                            "type": "Servicio"
+                        }
+                    ],
+                    "samples": [
+                        "qué es {Servicio}",
+                        "qué es {cargo}",
+                        "quién es {cargo}"
+                    ]
+                },
+                {
+                    "name": "Ubicacion",
+                    "slots": [
+                        {
+                            "name": "servicio",
+                            "type": "Servicio"
+                        }
+                    ],
+                    "samples": [
+                        "en qué edificio  {servicio}",
+                        "dónde está ubicado {servicio}",
+                        "dónde encuentro {servicio}",
+                        "dónde está {servicio}"
+                    ]
+                },
+                {
+                    "name": "Fechas",
+                    "slots": [
+                        {
+                            "name": "Calendario",
+                            "type": "Calendario"
+                        }
+                    ],
+                    "samples": [
+                        "qué fecha es {Calendario}",
+                        "qué día es {Calendario}",
+                        "qué días serán {Calendario}",
+                        "cuándo es {Calendario}",
+                        "Cuándo será {Calendario}"
+                    ]
+                },
+                {
+                    "name": "tramites",
+                    "slots": [
+                        {
+                            "name": "Verbos",
+                            "type": "Verbos"
+                        }
+                    ],
+                    "samples": [
+                        "cómo hago para {Verbos}",
+                        "de qué manera puedo {Verbos}",
+                        "cómo puedo {Verbos}"
+                    ]
+                },
+                {
+                    "name": "Agradecimiento",
+                    "slots": [],
+                    "samples": [
+                        "Estupendo",
+                        "Perfecto",
+                        "Me has sido de ayuda",
+                        "Eres muy útil",
+                        "Genial",
+                        "Has sido muy amable",
+                        "Eres buena",
+                        "Muchas Gracias"
+                    ]
+                },
+                {
+                    "name": "Chistes",
+                    "slots": [],
+                    "samples": [
+                        "Quiero reirme",
+                        "hazme reír",
+                        "di algo chistoso",
+                        "haz una broma",
+                        "dime una broma",
+                        "Me podrías contar un chiste",
+                        "Dime algo gracioso",
+                        "Hazme reir",
+                        "Cuéntame algo gracioso",
+                        "Cuéntame un chiste"
+                    ]
+                },
+                {
+                    "name": "Normativa",
+                    "slots": [
+                        {
+                            "name": "Comportamiento",
+                            "type": "Comportamiento"
+                        }
+                    ],
+                    "samples": [
+                        "cuáles son las consecuencias si {Comportamiento}",
+                        "qué puede pasar si {Comportamiento}",
+                        "qué sucede si {Comportamiento}",
+                        "qué pasa si {Comportamiento}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "cargo",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "tutor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "delegado"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vicerrector"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "profesor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rector"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Servicio",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Carreras Profesionales"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Servicio Idiomas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Palacio Colomina"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Calendario",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "primera convocatoria"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pascua",
+                                "synonyms": [
+                                    "semana santa"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Verbos",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "matricularme"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Imprimir",
+                                "synonyms": [
+                                    "estampar"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Test",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "skill"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Comportamiento",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "me pillan copiando",
+                                "synonyms": [
+                                    "me sorprenden copiando",
+                                    "plagio",
+                                    "copio",
+                                    "me ven copiando"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
